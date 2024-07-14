@@ -1,0 +1,84 @@
+.implement-section {
+    padding:150px 0;
+}
+.implement {
+    @include Display($items:center, $space:start, $gap:125px);
+}
+.implement-img-wrapper > img {
+    display: inline-block;
+}
+.implement__content-wrapper {
+    width: 445px;
+    padding-bottom: 40px;
+}
+.implement__title {
+    @include TextStyle($MB:24px, $FS:48px, $FW:400, $CLR:#36536B, $LH:56px, $CASE:inherit);
+}
+.implement__text {
+    @include TextStyle($MB:0px, $FS:15px, $FW:400, $CLR:#6C8294, $LH:28px, $CASE:inherit);
+}
+
+// Responsive
+
+@media (max-width:1028px){
+    .implement-section{
+        padding: 100px 0;
+    }
+    .implement{
+        @include Display($items:center, $space:space-between, $gap:10px);
+    }
+}
+
+// Tablet
+@media (max-width:850px){
+    .implement-section{
+        padding: 100px 0;
+    }
+    .implement{
+        @include Display($items:center, $space:start, $gap:48px);
+        flex-direction: column;
+    }
+    .implement-img-wrapper{
+        width: 391px;
+    }
+    .implement-img-wrapper > img{
+        width: 100%;
+        height: 250px;
+        display: inline-block;
+    }
+    .implement__content-wrapper{
+        width: 573px;
+        text-align: center;
+    }
+    .implement__title{
+        @include TextStyle($MB:24px, $FS:48px, $FW:400, $CLR:#36536B, $LH:56px, $CASE:inherit);
+    }
+    .implement__text {
+        @include TextStyle($MB:0px, $FS:15px, $FW:400, $CLR:#6C8294, $LH:28px, $CASE:inherit);
+    }
+}
+
+// Mobile
+@media(max-width:576px){
+    .implement-section{
+        padding: 80px 0;
+    }
+    .implement{
+        @include Display($items:center, $space:start, $gap:48px);
+        flex-direction: column;
+    }
+    .implement-img-wrapper{
+        width: 328px;
+        height: 209px;
+    }
+    .implement__content-wrapper{
+        width: 328px;
+        text-align: center;
+    }
+    .implement__title {
+        @include TextStyle($MB:24px, $FS:36px, $FW:400, $CLR:#36536B, $LH:36px, $CASE:inherit);
+    }
+    .implement__text {
+        @include TextStyle($MB:0px, $FS:15px, $FW:400, $CLR:#6C8294, $LH:28px, $CASE:inherit);
+    }
+}
