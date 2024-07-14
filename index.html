@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./images/favico.png">
     <link rel="stylesheet" href="./css/main.css">
     <title>Site Title</title>
@@ -11,7 +12,7 @@
     <header class="site-header">
         <div class="container">
             <div class="header">
-                <div class="header__logo-wrapper">
+                <div data-aos="fade-right" class="header__logo-wrapper">
                     <a class="header__logo-link" href="/">
                         <img class="header__logo-img" src="./images/logo.svg" alt="Site Logo" width="133" height="36">
                     </a>
@@ -27,7 +28,7 @@
                         </li>
                     </ul>
                 </div>
-                <a class="header__link-demo" href="#">Schedule a Demo</a>
+                <a data-aos="fade-left" class="header__link-demo" href="#">Schedule a Demo</a>
                 <button onclick="handleMenuBtnClick()" class="header__menu-btn">
                     <img src="./images/hambuger.svg" alt="Menu Icon" width="28" height="17">
                 </button>
@@ -57,7 +58,7 @@
         <section class="hero-section">
             <div class="container">
                 <div class="hero">
-                    <div class="hero__content-wrapper">
+                    <div data-aos="fade-right" class="hero__content-wrapper">
                         <h1 class="hero__title">Start building with our APIs for absolutely free.</h1>
                         <form class="hero__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
                             <label class="hero__label">
@@ -67,19 +68,19 @@
                         </form>
                         <p class="hero__bottom-content">Have any questions? <strong class="hero__bottom-content hero__bottom-content--strong-text">Contact Us</strong></p>
                     </div>
-                    <img class="hero__content-img" src="./images/hero-img.png" alt="Mobile img" width="263" height="500">
+                    <img data-aos="fade-left" class="hero__content-img" src="./images/hero-img.png" alt="Mobile img" width="263" height="500">
                 </div>
             </div>
         </section>
         <section class="work-section">
             <div class="container">
                 <div class="work">
-                    <div class="work__content">
+                    <div data-aos="fade-right" class="work__content">
                         <h2 class="work__title">Who we work with</h2>
                         <p class="work__text">Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users. </p>
                         <a class="work__about-link" href="">About Us</a>
                     </div>
-                    <ul class="work__list">
+                    <ul data-aos="fade-left" class="work__list">
                         <li class="work__item">
                             <a class="work__item--img-link" href="https://www.tesla.com">
                                 <img src="./images/tesla.svg" alt="tesla-icon" width="129" height="17">
@@ -117,10 +118,10 @@
         <section class="implement-section">
             <div class="container">
                 <div class="implement">
-                    <div class="implement-img-wrapper">
+                    <div data-aos="fade-right" class="implement-img-wrapper">
                         <img src="./images/implement-img.png" alt="implement-img" width="445" height="284">
                     </div>
-                    <div class="implement__content-wrapper">
+                    <div data-aos="fade-left" class="implement__content-wrapper">
                         <h2 class="implement__title">Easy to implement</h2>
                         <p class="implement__text">Our API comes with just a few lines of code. You’ll be up and running in no time. We built our documentation page to integrate payments functionality with ease.</p>
                     </div>
@@ -130,32 +131,32 @@
         <section class="simple-section">
             <div class="container">
                 <div class="simple">
-                    <div class="simple__content">
+                    <div data-aos="fade-right" class="simple__content">
                         <h2 class="simple__title">Simple UI & UX</h2>
                         <p class="simple__text">Our pre-built form is easy to integrate in your app or website’s checkout flow and designed to optimize conversion. </p>
                     </div>
-                    <img class="simple__img" src="./images/simple-img.png" alt="simple-img" width="566" height="500">
+                    <img data-aos="fade-left" class="simple__img" src="./images/simple-img.png" alt="simple-img" width="566" height="500">
                 </div>
             </div>
         </section>
         <section class="personal-section">
             <div class="container personal">
                 <ul class="personal__list">
-                    <li class="personal__item"> 
+                    <li data-aos="fade-right" class="personal__item"> 
                         <div class="personal__img-wrapper">
                             <img class="personal__item-img" src="./images/finance-img.svg" alt="finance-img" width="106" height="106">
                         </div>
                         <strong class="personal__subtitle">Personal Finances</strong>
                         <p class="personal__text">Consolidate financial data from multiple sources and categorize transactions up to 2 years of history. Analyze reports to reconcile activities in your account. </p>
                     </li>
-                    <li class="personal__item"> 
+                    <li data-aos="fade-up" class="personal__item"> 
                         <div class="personal__img-wrapper">
                             <img class="personal__item-img" src="./images/coverage-img.svg" alt="coverage-img" width="106" height="106">
                         </div>
                         <strong class="personal__subtitle">Banking & Coverage</strong>
                         <p class="personal__text">With our platform, you can speed up account onboarding and support ongoing payments for checking, savings, credit card, and brokerage accounts. </p>
                     </li>
-                    <li class="personal__item"> 
+                    <li data-aos="fade-left" class="personal__item"> 
                         <div class="personal__img-wrapper">
                             <img class="personal__item-img" src="./images/paument-img.svg" alt="paument-img" width="106" height="106">
                         </div>
@@ -168,8 +169,8 @@
         <section class="order-section">
             <div class="container">
                 <div class="order">
-                    <h2 class="order__title">Ready to start?</h2>
-                    <form class="order__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+                    <h2 data-aos="fade-right" class="order__title">Ready to start?</h2>
+                    <form data-aos="fade-left" class="order__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
                         <label class="order__label">
                             <input class="order__input" type="text" placeholder="Enter email address" name="user__address" required aria-label="Enter email address">
                             <button class="order__submit-btn" type="submit">Schedule a Demo</button>
@@ -227,5 +228,9 @@
         </div>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
